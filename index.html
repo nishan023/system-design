@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>System Design</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family:
+          Inter,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Arial,
+          sans-serif;
+
+        background: linear-gradient(135deg, #f5f7fa, #e9eef5);
+        color: #1f2937;
+        min-height: 100vh;
+
+        padding: 40px 20px;
+      }
+
+      .page {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .header h1 {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: #111827;
+      }
+
+      .header p {
+        color: #6b7280;
+        font-size: 15px;
+      }
+
+      .gist-card {
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        padding: 24px;
+
+        box-shadow:
+          0 10px 30px rgba(0, 0, 0, 0.08),
+          0 2px 8px rgba(0, 0, 0, 0.04);
+
+        overflow: hidden;
+      }
+
+      .gist-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #e5e7eb;
+      }
+
+      .gist-header h2 {
+        font-size: 18px;
+        color: #111827;
+      }
+
+      .badge {
+        background: #f3f4f6;
+        color: #4b5563;
+        padding: 6px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      /* GitHub Gist styling */
+      .gist {
+        font-size: 14px;
+      }
+
+      .gist .gist-file {
+        border: none !important;
+        margin-bottom: 0 !important;
+      }
+
+      .gist .gist-data {
+        border-bottom: none !important;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .gist .gist-meta {
+        padding: 12px 0 0 !important;
+        background: transparent !important;
+      }
+
+      /* Horizontal scrolling for code on small screens */
+      .gist .blob-wrapper {
+        overflow-x: auto;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 20px 12px;
+        }
+
+        .header h1 {
+          font-size: 26px;
+        }
+
+        .gist-card {
+          padding: 16px;
+          border-radius: 12px;
+        }
+
+        .gist-header {
+          align-items: flex-start;
+          gap: 10px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .header {
+          margin-bottom: 20px;
+        }
+
+        .header h1 {
+          font-size: 23px;
+        }
+
+        .gist-card {
+          padding: 12px;
+        }
+
+        .badge {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="page">
+      <section class="gist-card">
+        <!-- GitHub Gist -->
+        <script src="https://gist.github.com/nishan023/01501a5e3a333d9f615a4091c3580c6f.js"></script>
+      </section>
+    </main>
+  </body>
+</html>
